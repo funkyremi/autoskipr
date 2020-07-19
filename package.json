@@ -1,0 +1,17 @@
+{
+  "name": "autoskipr",
+  "version": "1.0.0",
+  "description": "Auto Skip extension for Netflix, Prime and Disney+",
+  "source": "src/content_script.js",
+  "main": "dist/bundle_new.js",
+  "repository": "https://github.com/funkyremi/auto-skip-netflix-prime-disney",
+  "scripts": {
+    "build": "rm -rf dist && microbundle -f es --sourcemap false && mv dist/bundle_new.esm.js dist/bundle.js",
+    "dev": "microbundle watch"
+  },
+  "author": "Rémi TESTA",
+  "license": "MIT",
+  "devDependencies": {
+    "microbundle": "0.12.0"
+  }
+}
